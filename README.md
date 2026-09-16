@@ -1,70 +1,435 @@
-# Getting Started with Create React App
+# 🎬 BookMySeat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Book Your Movie. Build Your Combo. Enjoy the Show.
 
-## Available Scripts
+BookMySeat is a beginner-friendly React-based cinema booking application that allows users to discover movies, explore theatres and showtimes, select seats, add snacks and combos, complete a checkout flow, and view their digital tickets and booking history.
 
-In the project directory, you can run:
+🔗 **Live Demo:** [bookmyseat-movie.netlify.app](https://bookmyseat-movie.netlify.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 About the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+BookMySeat is designed as a complete frontend cinema booking experience.
 
-### `npm test`
+The application combines real-time movie information from the TMDB API with a simple cinema booking workflow.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users can:
 
-### `npm run build`
+- Browse trending and available movies
+- Search and explore movies
+- View movie details
+- Explore theatre shows and showtimes
+- Select cinema seats
+- Add popcorn, drinks, snacks, and combos
+- View and manage their cart
+- Complete the checkout process
+- Receive a digital booking ticket
+- View previous bookings
+- Login using a simple localStorage-based login system
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Live Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+👉 [bookmyseat-movie.netlify.app](https://bookmyseat-movie.netlify.app/)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🎥 Movie Discovery
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Trending movies
+- Movie search
+- Movie details
+- Movie posters and ratings
+- Release dates
+- Movie languages
+- TMDB API integration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🏢 Theatre & Show Selection
 
-## Learn More
+- Browse available theatres
+- Select theatre
+- Select screen
+- Select date
+- Select showtime
+- Special/FDFS show support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 💺 Seat Selection
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Cinema-style seat layout
+- Available seats
+- Selected seats
+- Occupied seats
+- Multiple seat selection
+- Automatic ticket amount calculation
 
-### Code Splitting
+### 🍿 Snacks & Combos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Users can add cinema snacks such as:
 
-### Analyzing the Bundle Size
+- Classic Popcorn
+- Cheese Popcorn
+- Caramel Popcorn
+- Coke
+- Pepsi
+- Sprite
+- Fanta
+- Cold Coffee
+- Nachos
+- French Fries
+- Burgers
+- Sandwiches
+- Pizza
+- Samosa
+- Ice Cream
+- Brownie
+- Waffle
+- Popcorn & Drink Combos
+- Family Combos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🛒 Cart
 
-### Making a Progressive Web App
+- Movie ticket summary
+- Snack summary
+- Quantity management
+- Price calculation
+- Total amount
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 💳 Checkout
 
-### Advanced Configuration
+- Booking summary
+- Customer details
+- Ticket amount
+- Snacks amount
+- GST calculation
+- Final total
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🎟️ Digital Ticket
 
-### Deployment
+After completing a booking, users can view:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Booking ID
+- Movie
+- Theatre
+- Screen
+- Date
+- Show time
+- Selected seats
+- Snacks
+- Total amount
+- Customer details
+- Digital ticket layout
 
-### `npm run build` fails to minify
+### 📋 My Bookings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Users can view their previous bookings stored in the browser.
+
+### 🔐 Login
+
+Simple frontend login system using:
+
+- Email
+- Password
+- LocalStorage
+
+No backend authentication is used in this project.
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Usage |
+|---|---|
+| React.js | Frontend UI development |
+| JavaScript | Application logic |
+| HTML5 | Page structure |
+| CSS3 | Styling |
+| Tailwind CSS | Responsive UI styling |
+| React Router DOM | Page navigation and routing |
+| TMDB API | Movie and TV data |
+| Fetch API | API requests |
+| React Hooks | State and lifecycle management |
+| LocalStorage | Login and booking data |
+| Git | Version control |
+| GitHub | Source code hosting |
+| Netlify | Deployment |
+
+---
+
+## 📁 Project Structure
+
+```text
+BookMySeat/
+│
+├── public/
+│   ├── logo.png
+│   ├── _redirects
+│   └── snacks/
+│       ├── classic-popcorn.png.png
+│       ├── cheese-popcorn.png.png
+│       ├── coke.png.png
+│       └── ...
+│
+├── src/
+│   │
+│   ├── components/
+|   |   |── ChatbotAI.js
+│   │   ├── Footer.js
+│   │   ├── Loading.js
+│   │   ├── MovieCard.js
+│   │   ├── Navbar.js
+│   │   └── Seat.js
+│   │
+│   ├── data/
+│   │   ├── seats.js
+│   │   ├── snacks.js
+│   │   └── theatres.js
+│   │
+│   ├── pages/
+│   │   ├── Cart.js
+│   │   ├── Checkout.js
+│   │   ├── Home.js
+│   │   ├── Login.js
+│   │   ├── MovieDetails.js
+│   │   ├── Movies.js
+│   │   ├── MyBookings.js
+│   │   ├── SeatSelection.js
+│   │   ├── Snacks.js
+│   │   ├── TheatreShows.js
+│   │   └── Ticket.js
+│   │
+│   ├── services/
+│   │   └── tmdbApi.js
+│   │
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   └── index.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── .env
+```
+
+> `.env` should not be committed to GitHub.
+
+---
+
+## 🔑 TMDB API Setup
+
+This project uses the TMDB API to retrieve movie information.
+
+Create a `.env` file in the project root:
+
+```env
+REACT_APP_TMDB_API_KEY=YOUR_TMDB_API_KEY
+
+REACT_APP_GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+Replace `YOUR_TMDB_API_KEY` with your own TMDB API key.
+
+Replace `YOUR_GEMINI_API_KEY` with your own GEMINI API key.
+
+### Important
+
+Do not upload your `.env` file to GitHub.
+
+Make sure `.gitignore` contains:
+
+```gitignore
+.env
+```
+
+For the deployed Netlify application, the `REACT_APP_TMDB_API_KEY` & `REACT_APP_GEMINI_API_KEY`  environment variable should be configured in Netlify.
+
+---
+
+## 💻 Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/PraveenKumar7545/React_Project_BookMySeat.git
+```
+
+### 2. Open the project
+
+```bash
+cd BookMySeat
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Create the environment file
+
+Create:
+
+```text
+.env
+```
+
+Add:
+
+```env
+REACT_APP_TMDB_API_KEY=YOUR_TMDB_API_KEY
+```
+
+### 5. Start the development server
+
+```bash
+npm start
+```
+
+The application will run at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 🌐 Deployment
+
+The application is deployed using Netlify.
+
+### Production Build
+
+```bash
+npm run build
+```
+
+The production files are generated inside:
+
+```text
+build/
+```
+
+### Netlify Configuration
+
+```text
+Build command:
+npm run build
+
+Publish directory:
+build
+```
+
+The project uses React Router, so the `public/_redirects` file contains:
+
+```text
+/*    /index.html   200
+```
+
+This allows React Router routes to work correctly after deployment.
+
+---
+
+## 💾 Data Storage
+
+This is a frontend-only project.
+
+The application uses browser `localStorage` for:
+
+- Login information
+- Selected booking information
+- Booking history
+- Cart-related data
+
+No external database is connected.
+
+---
+
+## 🎯 Main Application Flow
+
+```text
+Login
+  ↓
+Home
+  ↓
+Movies
+  ↓
+Movie Details
+  ↓
+Theatre & Show Selection
+  ↓
+Seat Selection
+  ↓
+Snacks & Combos
+  ↓
+Cart
+  ↓
+Checkout
+  ↓
+Digital Ticket
+  ↓
+My Bookings
+```
+
+---
+
+## 📱 Responsive Design
+
+The application is designed to work across:
+
+- 💻 Desktop
+- 💻 Laptop
+- 📱 Mobile
+- 📱 Tablet
+
+Tailwind CSS utility classes are used to create the responsive interface.
+
+---
+
+## 🔮 Future Improvements
+
+Possible future improvements include:
+
+- Real user authentication
+- Backend API
+- Database integration
+- Real payment gateway
+- Real-time seat availability
+- Booking cancellation
+- Email booking confirmation
+- QR code generation
+- User profile management
+- Theatre/admin dashboard
+- Movie reviews and ratings
+
+---
+
+## ⚠️ Disclaimer
+
+BookMySeat is an educational/portfolio project created for learning and demonstration purposes.
+
+Movie information and images are provided through the TMDB API.
+
+This project is not affiliated with or endorsed by TMDB.
+
+---
+
+## 👨‍💻 Developer
+
+**Praveen Kumar M**
+
+GitHub:  
+https://github.com/PraveenKumar7545
+
+---
+
+## ⭐ Project
+
+If you find this project useful or interesting, feel free to star the repository.
+
+**Book Your Movie. Build Your Combo. Enjoy the Show. 🎬🍿**
