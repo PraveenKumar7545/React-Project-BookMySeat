@@ -97,17 +97,17 @@ User: ${userMessage}`,
 
   return (
     <>
-      {/* Floating Button */}
+      {/* Floating Button - moved higher */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-black text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-800 transition"
+        className="fixed bottom-20 right-6 z-50 w-14 h-14 bg-black text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-800 transition"
       >
         {isOpen ? <span className="text-2xl">×</span> : <span className="text-2xl">💬</span>}
       </button>
 
-      {/* Chat Window */}
+      {/* Chat Window - moved higher */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
+        <div className="fixed bottom-36 right-6 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col overflow-hidden">
           
           {/* Header */}
           <div className="bg-black text-white px-4 py-3 flex items-center justify-between">
