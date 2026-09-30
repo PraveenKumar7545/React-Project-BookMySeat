@@ -10,7 +10,7 @@ BookMySeat is a beginner-friendly React-based cinema booking application that al
 
 ## 📸 About the Project
 
-BookMySeat is designed as a complete frontend cinema booking experience.
+BookMySeat is designed as a complete frontend cinema booking experience.     
 
 The application combines real-time movie information from the TMDB API with a simple cinema booking workflow.
 
