@@ -7,7 +7,7 @@ BookMySeat is a beginner-friendly React-based cinema booking application that al
 🔗 **Live Demo:** [bookmyseat-movie.netlify.app](https://bookmyseat-movie.netlify.app/)
 
 ---
-
+ 
 ## 📸 About the Project
 
 BookMySeat is designed as a complete frontend cinema booking experience.     
