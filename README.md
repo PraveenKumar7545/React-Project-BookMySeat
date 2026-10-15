@@ -16,7 +16,7 @@ The application combines real-time movie information from the TMDB API with a si
 
 Users can: 
  
-- Browse trending and available movies
+- Browse trending and available movies 
 - Search and explore movies
 - View movie details
 - Explore theatre shows and showtimes
