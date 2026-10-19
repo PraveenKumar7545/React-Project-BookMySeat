@@ -15,7 +15,7 @@ BookMySeat is designed as a complete frontend cinema booking experience.
 The application combines real-time movie information from the TMDB API with a simple cinema booking workflow.
 
 Users can:   
- 
+  
 - Browse trending and available movies 
 - Search and explore movies
 - View movie details
