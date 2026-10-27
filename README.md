@@ -19,7 +19,7 @@ Users can:
 - Browse trending and available movies 
 - Search and explore movies 
 - View movie details
-- Explore theatre shows and showtimes
+- Explore theatre shows and showtimes 
 - Select cinema seats
 - Add popcorn, drinks, snacks, and combos
 - View and manage their cart
