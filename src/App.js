@@ -1,5 +1,5 @@
-// src/App.js
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -19,32 +19,33 @@ import MyBookings from './pages/MyBookings';
 
 // Check if user is logged in
 const isLoggedIn = () => {
-  const user = localStorage.getItem('cineseat_user');
-  return user ? true : false;
+  return localStorage.getItem('cineseat_user') !== null;
 };
 
-// Protected Route component
+// Protected Route
 function ProtectedRoute({ children }) {
   if (!isLoggedIn()) {
     return <Navigate to="/login" replace />;
   }
+
   return children;
 }
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
-        {/* Login Page (No Navbar, No Footer) */}
+        {/* Login Page */}
         <Route path="/login" element={<Login />} />
 
-        {/* All other pages (Protected) */}
+        {/* Protected Pages */}
         <Route
           path="/*"
           element={
             <ProtectedRoute>
               <div className="min-h-screen flex flex-col bg-gray-100 text-black">
+
                 <Navbar />
 
                 <div className="flex-grow">
@@ -59,19 +60,21 @@ function App() {
                     <Route path="/checkout" element={<Checkout />} />
                     <Route path="/ticket" element={<Ticket />} />
                     <Route path="/bookings" element={<MyBookings />} />
-                    <Route path="*" element={<Navigate to="/" />} />
+
+                    <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </div>
 
                 <Footer />
                 <Chatbot />
+
               </div>
             </ProtectedRoute>
           }
         />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
